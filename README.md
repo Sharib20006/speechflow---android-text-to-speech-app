@@ -23,7 +23,13 @@ It includes several enhancements focused on improving pronunciation, reducing sp
 - Optimised speech processing to reduce delays caused by library limitations.
 - Improved startup performance so speech starts immediately with minimal initial delay.
 
-### 3. Automatic & Manual Update System
+### 3. Immediate Response for Screen Readers (Zero Click & Swipe Delay)
+
+- Delivers an immediate, snappy speech response whenever clicking, tapping, or swiping across items with screen readers such as TalkBack and Commentary (Jieshuo).
+- Eliminates the previous speech start delays and sluggishness, ensuring words are spoken the instant an element is touched or focused.
+- Provides a significantly more responsive and seamless navigation experience throughout the entire Android interface.
+
+### 4. Automatic & Manual Update System
 
 - **Check for Updates on Startup**: Automatically checks for new releases on GitHub when opening the app, presenting version details and changelog.
 - **Manual "Check for Updates" Button**: An always-visible button in settings to check for new updates on demand.
@@ -33,27 +39,27 @@ It includes several enhancements focused on improving pronunciation, reducing sp
   - Universal fallback: If a device-specific build is unavailable, it automatically downloads the Universal APK.
 - **In-App Download & Installation**: Real-time download progress with options to download in the background, install directly, or save the APK to your files.
 
-### 4. Force Language & Speech Controls
+### 5. Force Language & Speech Controls
 
 - **Force Language**: Lock speech output to your preferred language (US English, UK English, Spanish, French, German, Italian, Polish, Japanese, Hindi) so other apps cannot unexpectedly change the language.
 - **Force Speech Rate & Force Pitch**: Lock your preferred talking speed and pitch so third-party applications and screen readers cannot alter your settings.
 - **Sample Rate Selection**: Choose between standard 11,025 Hz and classic 8,000 Hz audio output.
 - **Pause Shortening**: JAWS-style pause trimming to remove unnecessary pauses at the end of sentences and shorten punctuation delays for a snappier screen-reading experience.
 
-### 5. Dictionaries, Community Dictionary & Case-Sensitivity
+### 6. Dictionaries, Community Dictionary & Case-Sensitivity
 
 - **User Dictionary Management**: Easily add, edit, search, and delete custom word pronunciations right from the settings.
 - **Dictionary Case-Sensitivity (Sensitive Word Support)**: Choose whether a custom dictionary entry requires an exact case match (for example, reading capitalized `IT` differently from `it`) or applies case-insensitively.
 - **Community Dictionary Support**: Includes a built-in community dictionary that can be enabled or disabled with a single switch.
 - **Language-Specific Dictionaries**: Create and manage separate pronunciation dictionaries for each individual language.
 
-### 6. Filter Typing Echo
+### 7. Filter Typing Echo
 
 - Added support for filtering typing echo.
 - Useful for users who rely on direct-touch typing.
 - Enable this option to avoid duplicate announcements of typed keys and prevent voice stuttering when typing quickly.
 
-### 7. Intelligent Number & Roman Numeral Processing
+### 8. Intelligent Number & Roman Numeral Processing
 
 - **Number Reading Modes**: Customize how numbers are announced:
   - Normal
@@ -64,33 +70,33 @@ It includes several enhancements focused on improving pronunciation, reducing sp
 - **Smooth Time Reading**: Natural 12-hour and 24-hour time formatting.
 - **Roman Numeral Reading**: Automatically recognizes and speaks Roman numerals in titles, chapters, and dates (e.g. *"Chapter IV"*, *"King Henry VIII"*).
 
-### 8. Emoji 17.0 Reading Support
+### 9. Emoji 17.0 Reading Support
 
 - Comprehensive emoji reading with spoken descriptive feedback for emojis, including full support for modern **Emoji 17.0** emojis.
 
-### 9. Punctuation, Skip Symbols & Hashtag Reading
+### 10. Punctuation, Skip Symbols & Hashtag Reading
 
 - **Punctuation Verbosity**: Adjust punctuation reading levels between *None*, *Some*, *Most*, and *All*.
 - **Skip Symbols**: Configure specific symbols or characters to be completely silenced and ignored during speech.
 - **Context-Sensitive Hashtags**: Pronounces hashtags naturally (e.g. `#speechFlow` is read as *"hashtag speechFlow"*).
 - **Context-Sensitive Pronunciation Handling**: Smarter context rules for common ambiguous words and heteronyms.
 
-### 10. Camel Case Normalisation
+### 11. Camel Case Normalisation
 
 - Provides an option for camel case normalisation.
 - Useful for users who frequently encounter camel case text (e.g., `ThisIsCamelCaseText` is read as separate, natural words).
 
-### 11. Repeating Character Support
+### 12. Repeating Character Support
 
 - Supports counting repeated characters instead of announcing the same character repeatedly (e.g. announces *"5 dots"* instead of repeating *"dot dot dot dot dot"*).
 - Helps make repeated symbols and characters easier to understand.
 
-### 12. Original Speech Options Retained
+### 13. Original Speech Options Retained
 
 - Retains all classic voices (**Reed, Shelley, Bobby, Rocko, Glen, Sandy, Grandma, Grandpa**) and parameters (pitch, speed, inflection, head size, roughness, breathiness, volume, gender).
 - Existing users can continue using the familiar speech controls without changes.
 
-### 13. Organised Settings
+### 14. Organised Settings
 
 The settings layout has been organised into separate sections for easier access and better clarity:
 
@@ -98,7 +104,7 @@ The settings layout has been organised into separate sections for easier access 
 - Text Processing Settings
 - Dictionary Settings
 
-### 14. Compatibility with Other TTS Apps
+### 15. Compatibility with Other TTS Apps
 
 speechFlow is designed to work smoothly with applications such as:
 
@@ -109,7 +115,7 @@ speechFlow is designed to work smoothly with applications such as:
 
 If speechFlow does not work correctly with another application, try clearing that application's data and configuring the TTS engine again.
 
-### 15. Additional Improvements
+### 16. Additional Improvements
 
 - Various other fixes and optimisations for smoother performance.
 - General improvements to speech processing, accessibility, and usability.
@@ -133,6 +139,7 @@ speechFlow is a modified and enhanced version based on the Evdroid project. Its 
 The project focuses on:
 
 - Authentic, clear Hindi speech
+- Immediate, delay-free response when swiping or clicking with screen readers
 - Updated ECI engine integration
 - Reduced speech delay
 - Comprehensive update and dictionary system
